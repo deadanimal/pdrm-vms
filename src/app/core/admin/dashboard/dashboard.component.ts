@@ -45,6 +45,9 @@ const dataMarkers = [
 })
 export class DashboardComponent implements OnInit {
 
+  clicked
+  clicked1
+  
   leafletOptions = {
     layers: [
       L.tileLayer(
