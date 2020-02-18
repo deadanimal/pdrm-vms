@@ -1,0 +1,142 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Maintenance</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-toolbox text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class=" row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h5 class=" card-title text-uppercase text-muted mb-0">
+                                        Total Maintenance Cost
+                                    </h5>
+
+                                    <span class="h2 font-weight-bold mb-0"> RM23312332 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h5 class=" card-title text-uppercase text-muted mb-0">
+                                        Average Maintenance Cost
+                                    </h5>
+
+                                    <span class="h2 font-weight-bold mb-0"> RM5612 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h5 class=" card-title text-uppercase text-muted mb-0">
+                                        Turnover Rate
+                                    </h5>
+
+                                    <span class="h2 font-weight-bold mb-0"> RM22332 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-stats">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <h5 class=" card-title text-uppercase text-muted mb-0">
+                                        Total 2020 Cost
+                                    </h5>
+
+                                    <span class="h2 font-weight-bold mb-0"> RM1312332 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Maintenance Cost by Month</h4>
+                </div>
+                <div class="card-body p-0 pt-2">
+                    <div id="chartdiv" style="width: 100%; height: 400px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Maintenance Type</h4>
+                </div>
+                <div class="card-body">
+                    <div id="chartdiv1" style="width: 100%; height: 400px"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Maintenance Form</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-control-label">Vessel ID</label>
+                        <input class="form-control" placeholder="Enter vessel ID">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Damage</label>
+                        <select class="form-control custom-select">
+                            <option selected hidden>Please select</option>
+                            <option>Damage 1</option>
+                            <option>Damage 2</option>
+                            <option>Damage 3</option>
+                            <option>Damage 4</option>
+                            <option>Damage 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Date</label>
+                        <input class="form-control" placeholder="Select date" type="date">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Details</label>
+                        <textarea class="form-control" placeholder="Enter details"></textarea>
+                    </div>
+                    <button class="btn btn-default" type="button">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

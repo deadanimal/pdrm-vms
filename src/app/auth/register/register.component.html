@@ -1,0 +1,76 @@
+<div class="main-content bg-transparent">
+	<div class="container mt-6 pb-4">
+		<div class="row justify-content-center">
+			<div class="col-lg-5 col-md-7">
+				<div class="card bg-secondary border-0 mb-0">
+					<div class="card-body px-lg-5 py-lg-5">
+						<div class="client-logo-area">
+							<img class="client-logo" src="assets/img/logo/prototype-logo.png">
+						</div>
+						<form role="form">
+							<div class="form-group mb-3" [ngClass]="{ focused: focus === true }">
+								<div class="input-group input-group-alternative">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-primary">
+											<i class="ni ni-email-83 text-white"></i>
+										</span>
+									</div>
+									<input 
+										class="form-control text-dark" 
+										placeholder="Email" 
+										type="email"
+										(focus)="focus = true" 
+										(blur)="focus = false" />
+								</div>
+							</div>
+							<div class="form-group mb-3" [ngClass]="{ focused: focus1 === true }">
+								<div class="input-group input-group-alternative">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-primary">
+											<i class="ni ni-lock-circle-open text-white"></i>
+										</span>
+									</div>
+									<input 
+										class="form-control text-dark" 
+										placeholder="Password" 
+										type="password"
+										(focus)="focus1 = true" 
+										(blur)="focus1 = false" />
+								</div>
+							</div>
+							<div class="form-group" [ngClass]="{ focused: focus1 === true }">
+								<div class="input-group input-group-alternative">
+									<div class="input-group-prepend">
+										<span class="input-group-text bg-primary">
+											<i class="ni ni-lock-circle-open text-white"></i>
+										</span>
+									</div>
+									<input 
+										class="form-control text-dark" 
+										placeholder="Confirm password" 
+										type="password"
+										(focus)="focus1 = true" 
+										(blur)="focus1 = false" />
+								</div>
+							</div>
+							<div class="custom-control custom-control-alternative custom-checkbox">
+								<input class="custom-control-input" id=" customCheckLogin" type="checkbox" />
+								<label class="custom-control-label" for=" customCheckLogin">
+									<span>Agree with the terms & conditions.</span>
+								</label>
+							</div>
+							<div class="text-center">
+								<button type="button" class="btn btn-primary btn-block my-4" [routerLink]="['/admin/dashboard']">
+									Create account
+								</button>
+								<button type="button" class="btn btn-outline-primary btn-block my-4" [routerLink]="['/auth/login']">
+									Login
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

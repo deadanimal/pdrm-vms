@@ -1,0 +1,87 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class="header-body">
+            <div class="row align-items-center py-4">
+                <div class="col-lg-6 col-7">
+                    <h6 class="h2 text-dark d-inline-block mb-0">Vessel</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-ship text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Real-time Information</h4>
+                </div>
+                <div class="card-body p-0 pt-2">
+                    <div id="chartSpeedo" style="width: 100%; height: 230px"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Vessel Information</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="form-control-label">ID</label>
+                        <input class="form-control" disabled value="VES01920">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Manufacturer</label>
+                        <input class="form-control form-control-sm" disabled value="Bosch">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Model</label>
+                        <input class="form-control form-control-sm" disabled value="Mod-1024">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Person in Charge</label>
+                        <input class="form-control form-control-sm" disabled value="Mizi Husaini">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Last Maintenance</label>
+                        <input class="form-control form-control-sm" disabled value="13 February 2020">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div 
+                    class="leaflet-map"
+                    leaflet 
+                    [leafletOptions]="leafletOptions"
+                    [leafletLayers]="layers">
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Distance</h4>
+                </div>
+                <div class="card-body p-0 pt-2">
+                    <div id="chartDistance" style="width: 100%; height: 200px"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="m-0">Idling</h4>
+                </div>
+                <div class="card-body p-0 pt-2">
+                    <div id="chartIdle" style="width: 100%; height: 200px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
