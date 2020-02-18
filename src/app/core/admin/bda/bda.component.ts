@@ -65,8 +65,8 @@ export class BdaComponent implements OnInit {
       source: "scatter",
       opacity: 0.8,
       filled: true,
-      radiusMinPixels: 12,
-      radiusMaxPixels: 15,
+      radiusMinPixels: 15,
+      radiusMaxPixels: 18,
       getPosition: d => [d.Longitude, d.Latitude],
       getFillColor: d =>
       d.n_killed > 0 ? [200, 0, 40, 150] : [255, 140, 0, 100],
