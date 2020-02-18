@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
 
   clicked
   clicked1
-  
+
   leafletOptions = {
     layers: [
       L.tileLayer(
@@ -308,14 +308,8 @@ export class DashboardComponent implements OnInit {
     let chart = am4core.create("chartdiv1", am4charts.XYChart);
     chart.hiddenState.properties.opacity = 0; // this makes initial fade in effect
 
-    // Title
-    let title = chart.titles.create();
-    title.text = "Biggest U.S. retailers by 2018 revenue";
-    title.fontSize = 20;
-    title.marginBottom = 20;
-
     // Set format
-    chart.numberFormatter.numberFormat = "'[font-size: 10]US$[/] [bold]'#.0B";
+    chart.numberFormatter.numberFormat = "'[font-size: 10]RM[/] [bold]'#";
 
     // Create axes
     let categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
@@ -328,16 +322,14 @@ export class DashboardComponent implements OnInit {
     // Set data
     chart.data = [{
       "category": "",
-      "Walmart": 387.66,
-      "Amazon.com": 120.93,
-      "The Kroger Co.": 119.70,
-      "Costco": 101.43,
-      "Walgreens Boots Alliance": 98.39,
-      "The Home Depot": 97.27,
-      "CVS Health Corporation": 83.79,
-      "Target": 74.48,
-      "Lowe's Companies": 64.09,
-      "Albertsons Companies": 59.71
+      "Data 1": 387.66,
+      "Data 2": 120.93,
+      "Data 3": 119.70,
+      "Data 4": 101.43,
+      "Data 5": 98.39,
+      "Data 6": 97.27,
+      "Data 7": 83.79,
+      "Data 8": 74.48
     }];
 
     // Series

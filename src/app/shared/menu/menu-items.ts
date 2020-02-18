@@ -53,6 +53,12 @@ export const ROUTES: RouteInfo[] = [
     title: 'Management',
     type: 'link',
     icontype: 'fas fa-cogs text-purple'
+  },
+  {
+    path: '/admin/bda',
+    title: 'BDA',
+    type: 'link',
+    icontype: 'fas fa-chart-pie text-red'
   }
 ];
 

@@ -17,6 +17,12 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { ReportComponent } from './report/report.component';
 import { VesselComponent } from './vessel/vessel.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { BdaComponent } from './bda/bda.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+import * as mapbox from 'mapbox-gl';
+(mapbox as any).accessToken = environment.mapbox.accessToken
 
 @NgModule({
   declarations: [
@@ -25,7 +31,8 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
     AnalyticsComponent,
     ReportComponent,
     VesselComponent,
-    MaintenanceComponent
+    MaintenanceComponent,
+    BdaComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +42,8 @@ import { MaintenanceComponent } from './maintenance/maintenance.component';
     RouterModule.forChild(AdminRoutes),
     LeafletModule,
     LeafletMarkerClusterModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    HttpClientModule
   ]
 })
 export class AdminModule { }

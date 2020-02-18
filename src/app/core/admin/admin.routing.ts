@@ -5,6 +5,7 @@ import { ManagementComponent } from './management/management.component';
 import { ReportComponent } from './report/report.component';
 import { VesselComponent } from './vessel/vessel.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { BdaComponent } from './bda/bda.component';
 
 export const AdminRoutes: Routes = [
     {
@@ -33,6 +34,10 @@ export const AdminRoutes: Routes = [
             {
                 path: 'maintenance',
                 component: MaintenanceComponent
+            },
+            {
+                path: 'bda',
+                component: BdaComponent
             }
         ]
     }
