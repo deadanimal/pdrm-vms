@@ -17,4 +17,8 @@ export class MapService {
     return this.http.get<any>('../../../../assets/data/pelabuhan.json');
   }
 
+  getData1(file = 1): Observable<any> {
+    return this.http.get<any>('../../../../assets/data/trips.json');
+  }
+
 }

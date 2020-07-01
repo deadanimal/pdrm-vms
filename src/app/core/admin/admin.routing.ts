@@ -6,6 +6,7 @@ import { ReportComponent } from './report/report.component';
 import { VesselComponent } from './vessel/vessel.component';
 import { MaintenanceComponent } from './maintenance/maintenance.component';
 import { BdaComponent } from './bda/bda.component';
+import { RouteComponent } from './route/route.component';
 
 export const AdminRoutes: Routes = [
     {
@@ -38,6 +39,10 @@ export const AdminRoutes: Routes = [
             {
                 path: 'bda',
                 component: BdaComponent
+            },
+            {
+                path: 'route',
+                component: RouteComponent
             }
         ]
     }

@@ -22,6 +22,7 @@ import { BdaComponent } from './bda/bda.component';
 import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import * as mapbox from 'mapbox-gl';
+import { RouteComponent } from './route/route.component';
 (mapbox as any).accessToken = environment.mapbox.accessToken
 
 @NgModule({
@@ -32,7 +33,8 @@ import * as mapbox from 'mapbox-gl';
     ReportComponent,
     VesselComponent,
     MaintenanceComponent,
-    BdaComponent
+    BdaComponent,
+    RouteComponent
   ],
   imports: [
     CommonModule,
